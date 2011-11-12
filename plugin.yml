@@ -1,0 +1,125 @@
+name: PetCreeper
+main: mathew.petcreeper.PetMain
+version: 0.39
+
+commands:
+    pctp:
+        description: Teleport your pet(s) to you
+        usage: /pctp <Petname>
+        permission: petcreeper.pctp
+    pcfree:
+        description: Free your pet(s)
+        usage: /pcfree <Petname>
+        permission: petcreeper.pcfree
+    pcattack:
+        description: Make your pet(s) attack a player
+        usage: /pcattack <Player> <Petname>
+        permission: petcreeper.pcattack
+    pcname:
+        description: Rename a pet
+        usage: /pcname <Petname> <New petname>
+        permission: petcreeper.pcname
+
+permissions:
+    petcreeper.*:
+        description: Gives access to all PetCreeper commands and tame permissions
+        children:
+            petcreeper.pctp: true
+            petcreeper.pcfree: true
+            petcreeper.pcattack: true
+            petcreeper.pcname: true
+    petcreeper.pctp:
+        description: Allows teleporting pet
+        default: true
+    petcreeper.pcfree:
+        description: Allows freeing pet
+        default: true
+    petcreeper.pcattack:
+        description: Allows pet to attack
+        default: true
+    petcreeper.pcname:
+        description: Allows naming of pet
+        default: true
+    
+    petcreeper.tame.*:
+        description: Allows taming of all mobs
+        children:
+           petcreeper.tame.Chicken: true
+           petcreeper.tame.Cow: true
+           petcreeper.tame.Creeper: true
+           petcreeper.tame.Enderman: true
+           petcreeper.tame.Giant: true
+           petcreeper.tame.Pig: true
+           petcreeper.tame.PigZombie: true
+           petcreeper.tame.Sheep: true
+           petcreeper.tame.Spider: true
+           petcreeper.tame.Squid: true
+           petcreeper.tame.Zombie: true
+    
+    petcreeper.tame.Chicken:
+        description: Allows taming of chickens
+        default: true
+    petcreeper.tame.Cow:
+        description: Allows taming of cows
+        default: true
+    petcreeper.tame.Creeper:
+        description: Allows taming of creepers
+        default: true
+    petcreeper.tame.Enderman:
+        description: Allows taming of endermen
+        default: true
+    petcreeper.tame.Giant:
+        description: Allows taming of giants
+        default: true
+    petcreeper.tame.Pig:
+        description: Allows taming of pigs
+        default: true
+    petcreeper.tame.PigZombie:
+        description: Allows taming of zombie pigmen
+        default: true
+    petcreeper.tame.Sheep:
+        description: Allows taming of sheep
+        default: true
+    petcreeper.tame.Spider:
+        description: Allows taming of spiders
+        default: true
+    petcreeper.tame.Squid:
+        description: Allows taming of squids
+        default: true
+    petcreeper.tame.Zombie:
+        description: Allows taming of zombies
+        default: true
+        
+    petcreeper.ride.Chicken:
+        description: Allows riding of chickens
+        default: true
+    petcreeper.ride.Cow:
+        description: Allows riding of cows
+        default: true
+    petcreeper.ride.Creeper:
+        description: Allows riding of creepers
+        default: true
+    petcreeper.ride.Enderman:
+        description: Allows riding of endermen
+        default: true
+    petcreeper.ride.Giant:
+        description: Allows riding of giants
+        default: true
+    petcreeper.ride.Pig:
+        description: Allows riding of pigs
+        default: true
+    petcreeper.ride.PigZombie:
+        description: Allows riding of zombie pigmen
+        default: true
+    petcreeper.ride.Sheep:
+        description: Allows riding of sheep
+        default: true
+    petcreeper.ride.Spider:
+        description: Allows riding of spiders
+        default: true
+    petcreeper.ride.Squid:
+        description: Allows riding of squids
+        default: true
+    petcreeper.ride.Zombie:
+        description: Allows riding of zombies
+        default: true
